@@ -1,26 +1,42 @@
-# Backend Wizards Stage 0 — Dynamic Profile Endpoint
+# Stage Zero Backend Task
 
-## Setup Instructions
-1. Clone this repository
-2. Create a virtual environment
-3. Install dependencies from `requirements.txt`
-4. Create a `.env` file if needed
-5. Run the server: `python manage.py runserver`
+This project is a simple Django REST API that returns user details, a random cat fact, and the current UTC timestamp.
 
-## Endpoint
-GET /me
+## 🚀 How to Run Locally
 
-Response Example:
-{
-  "status": "success",
-  "user": {
-    "email": "example@mail.com",
-    "name": "John Doe",
-    "stack": "Python/Django"
-  },
-  "timestamp": "2025-10-19T09:22:33.900Z",
-  "fact": "Cats sleep 70% of their lives."
-}
+### 1. Clone this repository
+```
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>
+```
 
-## External API
-Cat Facts API: https://catfact.ninja/fact
+### 2. Create and activate a virtual environment
+```
+python -m venv venv
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
+```
+
+### 3. Install dependencies
+```
+pip install -r requirements.txt
+```
+
+### 4. Create a .env file in the project root
+```
+EMAIL=your_email@example.com
+NAME=<your>
+STACK=<your stack>
+CATFACT_URL=https://catfact.ninja/fact
+```
+
+
+### 5. Run the server
+```
+python manage.py runserver
+```
+
+### 6. Test Endpoint
+```
+Open http://127.0.0.1:8000/me
+```
