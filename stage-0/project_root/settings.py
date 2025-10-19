@@ -28,7 +28,9 @@ SECRET_KEY = config("SECRET_KEY", default="unsafe-default-for-dev")
 DEBUG = config('DEBUG', default='False') == 'True'
 
 ALLOWED_HOSTS = [
-    '*'
+    'https://hnginternship-production.up.railway.app/',
+    'localhost',
+    '127.0.0.1'
 ]
 
 
