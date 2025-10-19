@@ -30,7 +30,8 @@ DEBUG = config('DEBUG', default='False') == 'True'
 ALLOWED_HOSTS = [
     'https://hnginternship-production.up.railway.app/',
     'localhost',
-    '127.0.0.1'
+    '127.0.0.1',
+    os.getenv('APP_DOMAIN', '')
 ]
 
 
