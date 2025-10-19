@@ -6,15 +6,15 @@ This project is a simple Django REST API that returns user details, a random cat
 
 ### 1. Clone this repository
 ```
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone git@github.com:EmmanuelOnyekachi21/HNG_INTERNSHIP.git
+cd HNG_INTERNSHIP
 ```
 
 ### 2. Create and activate a virtual environment
 ```
-python -m venv venv
-source venv/bin/activate   # Linux/Mac
-venv\Scripts\activate      # Windows
+python -m venv .venv
+source .venv/bin/activate   # Linux/Mac
+.venv\Scripts\activate      # Windows
 ```
 
 ### 3. Install dependencies
@@ -39,4 +39,18 @@ python manage.py runserver
 ### 6. Test Endpoint
 ```
 Open http://127.0.0.1:8000/me
+```
+
+### 7. 🌐 Endpoint
+```
+{
+  "status": "success",
+  "user": {
+    "email": "nnabugwueo@gmail.com",
+    "name": "Emmanuel Onyekachi",
+    "stack": "backend"
+  },
+  "timestamp": "2025-10-19T12:00:00Z",
+  "fact": "Cats have five toes on their front paws, but only four on the back."
+}
 ```
