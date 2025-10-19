@@ -1,5 +1,3 @@
-### This is stage 0 of the Backend Track
-
 # Backend Wizards Stage 0 — Dynamic Profile Endpoint
 
 ## Setup Instructions
@@ -13,7 +11,6 @@
 GET /me
 
 Response Example:
-```
 {
   "status": "success",
   "user": {
@@ -24,8 +21,6 @@ Response Example:
   "timestamp": "2025-10-19T09:22:33.900Z",
   "fact": "Cats sleep 70% of their lives."
 }
-```
 
 ## External API
 Cat Facts API: https://catfact.ninja/fact
-
