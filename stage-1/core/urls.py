@@ -18,7 +18,7 @@ from django.urls import path
 from core import views
 
 urlpatterns = [
-    path('create_string/', views.create_strings, name="create-string"),
+    path('strings/', views.create_strings, name="create-string"),
     path('strings/filter-by-natural-language/', views.filter_by_natural, name='filter-by-natural-language'),
     path('strings/', views.get_string_by_filtering, name="list-string"),
     path('strings/<str:string_value>/', views.get_string, name="get-string"),
